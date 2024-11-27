@@ -10,10 +10,21 @@
     </div>
     <div class="site-info">
         <h2>사이트 소개</h2>
-        <p>1.DISC검사를 활용한 성격 맞춤형 매칭 
-            2.AI 얼굴인식으로 프로필사기 방지 
-            3.사용자의 다양한 취향 적극반영</p>
+        <p>1. DISC검사를 활용한 성격 맞춤형 매칭<br>
+           2. AI 얼굴인식으로 프로필사기 방지<br>
+           3. 사용자의 다양한 취향 적극 반영</p>
         <a href="login.html"><button>로그인</button></a>
     </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const siteInfo = document.querySelector('.site-info');
+            const siteInfoPosition = siteInfo.getBoundingClientRect().top;
+            
+            if (siteInfoPosition < window.innerHeight) {
+                siteInfo.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>
