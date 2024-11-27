@@ -1,81 +1,57 @@
-.container {
-    display: flex;
-    height: 100vh;
-}
-
-.left {
-    flex: 1;
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://img.freepik.com/premium-photo/3d-render-pink-heart-shaped-ice-cream-flat-lay_224530-2210.jpg?ga=GA1.1.951222327.1731824135&semt=ais_hybrid');
-    background-size: cover;
-    background-position: center;
-    filter: blur(1.4px);
-    z-index: 1;
-}
-
-.left h1 {
-    font-size: 3em;
-    color: white;
-    position: relative;
-    z-index: 10;
-}
-
-.right {
-    flex: 1;
-    padding: 20px;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.right h1 {
-    color: #333;
+.intro {
+    background-image: url('https://example.com/your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 2.5em;
-}
-.right {
-    background-color: rgba(234, 196, 209, 0.3); 
+    color: white;
 }
 
+.intro h1 {
+    font-size: 4em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.site-info {
+    display: none;
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.site-info h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
 
 button {
     padding: 15px 30px;
-    font-size: 1.5em;
-    background-color: #ff66b2;
+    font-size: 1.2em;
+    background-color: #ff4d4d;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    display: block;
-    margin: 20px auto;
 }
 
 button:hover {
-    background-color: #ff3385;
+    background-color: #ff1a1a;
 }
-
-.features {
-    margin-top: 30px;
-    font-size: 1.5em;
-}
-
-.feature-item {
-    margin-bottom: 20px;
-    font-size: 1.2em;
-}
-
-
