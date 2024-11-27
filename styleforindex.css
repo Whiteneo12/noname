@@ -59,7 +59,6 @@ button:hover {
     background-color: #ff1a1a;
 }
 
-/* 애니메이션 */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -71,7 +70,6 @@ button:hover {
     }
 }
 
-/* 스크롤 시 나타나게 하기 */
 body {
     animation: fadeInFromTop 1s forwards;
 }
