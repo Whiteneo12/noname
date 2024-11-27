@@ -22,14 +22,14 @@
     background-size: cover;
     background-position: center;
     filter: blur(1.4px);
-    z-index: 1; /* Background layer */
+    z-index: 1;
 }
 
 .left h1 {
     font-size: 3em;
     color: white;
     position: relative;
-    z-index: 10; /* Text layer above background */
+    z-index: 10;
 }
 
 .right {
