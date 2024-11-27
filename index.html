@@ -5,19 +5,57 @@
     <style>
         .container {
             display: flex;
-            height: 100vh;}
-        ..left {
-    flex: 1;
-    background-image: url('https://images.pexels.com/photos/4197558/pexels-photo-4197558.jpeg?auto=compress&cs=tinysrgb&w=600');
-    background-size: cover;
-    background-position: center;
-    height: 100vh; 
-    width: 100%;
-    background-color: rgba(0,0,0,0.3); 
-}
-
-        .right {flex: 1;
-            padding: 20px;}
+            height: 100vh;
+        }
+        .left {
+            flex: 1;
+            background-image: url('https://images.pexels.com/photos/4197558/pexels-photo-4197558.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            filter: blur(2px); /* 흐림 효과 */
+        }
+        .right {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            z-index: 10;
+            position: relative;
+        }
+        .right h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff1a1a;
+        }
+        .features {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        .feature-item {
+            margin-bottom: 10px;
+        }
     </style>
     <link rel="stylesheet" href="styleforindex.css">
 </head>
@@ -28,9 +66,11 @@
         </div>
         <div class="right">
             <h1>소개</h1>
-            <p>1. Disc검사를 활용한 성격 맞춤형 매칭<br>
-               2. Ai 얼굴인식을 활용한 프로필 사진 사기 방지<br>
-               3. 사용자의 다양한 취향 적극 반영</p>
+            <div class="features">
+                <div class="feature-item">1. Disc검사를 활용한 성격 맞춤형 매칭</div>
+                <div class="feature-item">2. Ai 얼굴인식을 활용한 프로필 사진 사기 방지</div>
+                <div class="feature-item">3. 사용자의 다양한 취향 적극 반영</div>
+            </div>
             <a href="login.html"><button>로그인</button></a>
         </div>
     </div>
