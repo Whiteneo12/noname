@@ -5,50 +5,31 @@
 
 .left {
     flex: 1;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-image: url('https://img.freepik.com/premium-photo/3d-render-pink-heart-shaped-ice-cream-flat-lay_224530-2210.jpg?ga=GA1.1.951222327.1731824135&semt=ais_hybrid');
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
     filter: blur(1.4px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 1; /* Background layer */
 }
 
 .left h1 {
     font-size: 3em;
     color: white;
-    z-index: 10;
     position: relative;
-    
-    
-}
-.container {
-    display: flex;
-    height: 100vh;
-}
-
-.left {
-    flex: 1;
-    background-image: url('https://img.freepik.com/premium-photo/3d-render-pink-heart-shaped-ice-cream-flat-lay_224530-2210.jpg?ga=GA1.1.951222327.1731824135&semt=ais_hybrid');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left h1 {
-    font-size: 3em;
-    color: white;
-    z-index: 10;
-    position: relative;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 10; /* Text layer above background */
 }
 
 .right {
