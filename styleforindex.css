@@ -1,5 +1,5 @@
 .intro {
-    background-image: url('your-image-url.jpg'); /* 이미지 배경 추가 */
+    background-image: url('https://images.pexels.com/photos/4197558/pexels-photo-4197558.jpeg?auto=compress&cs=tinysrgb&w=600'); /* 이미지 배경 추가 */
     background-color: #ff69b4; /* 핑크색 배경 추가 (이미지가 없을 경우 표시) */
     background-size: cover;
     background-position: center;
