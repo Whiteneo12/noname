@@ -1,72 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(45deg, #ff4d4d, #ff8c00, #ff4d4d);
-    background-size: 400% 400%;
-    animation: gradientAnimation 5s ease infinite;
+  font-family: 'Noto Sans KR', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: pink; /* Updated background color to pink */
 }
 
 @keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 input, button {
-    font-size: 1em;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-    border: 2px solid #ddd;
-    transition: all 0.3s ease;
+  font-size: 1em;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  transition: all 0.3s ease;
 }
 
 input:focus {
-    border-color: #ff4d4d;
-    box-shadow: 0 0 8px rgba(255, 77, 77, 0.5);
+  border-color: #ff4d4d;
+  box-shadow: 0 0 8px rgba(255, 77, 77, 0.5);
 }
 
 button {
-    background-color: #ff4d4d;
-    color: white;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+  background-color: #ff4d4d;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 button:hover {
-    transform: scale(1.1);
-    background-color: #ff1a1a;
+  transform: scale(1.1);
+  background-color: #ff1a1a;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #333;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
 }
